@@ -1,0 +1,61 @@
+main {
+  width: 100%;
+  height: 350px;
+}
+main a {
+  background: var( --dark-background);
+  width: 290px;
+  height: 40;
+  text-decoration: none;
+  font-size: 30px;
+  color: var(--white-background);
+  padding: 10px 20px ;
+  margin-left: 39%;
+}
+main a :hover {
+  background-color: var(--gray--background);
+}
+main h1 {
+  margin-top: -1065px;
+  z-index: 1;
+  margin-left: 27%;
+}
+.choose-car {
+  display: flex;
+  justify-content: center;
+  margin: 10% 0 30px;
+  background: var( --dark-background);
+  padding: 10px;
+}
+.car {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.car-container {
+  width: 33%;
+  background-color: var(--white-background);
+  height: 400px;
+}
+.car {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+div h2 {
+  color: var(--white-background);
+  background: var(--dark-background);
+}
+.car img {
+  width: 558px;
+  height: 400px;
+}
+.car div:nth-child(1) {
+  background: var(--dark-background);
+}
+.car span { 
+  color: var(--white-background);
+  margin: 0 150px;
+}

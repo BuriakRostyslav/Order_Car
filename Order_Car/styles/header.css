@@ -1,0 +1,50 @@
+header {
+    width: 100%;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+}
+header img {
+    height: 90px;
+    width: 90px;
+    margin: 0 250px;
+}
+.work-hours {
+    margin: 20px 0;
+}
+.Delivery {
+    margin: 20px 0;
+}
+nav {
+    height: 65px;
+    width: 100%;
+    margin: 0;
+    background:var(--yellow-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 38px;
+}
+.nav-gallery {
+    /* Стилі для сторінки "About" */
+    background: var(--orange-background);
+  }
+  
+  .nav-contact-us {
+    /* Стилі для сторінки "Contact" */
+    background: var(--red-background);
+  }
+nav a {
+    color: var(--white-background);
+    text-decoration: 0;
+    font-size: 25px;
+    padding: 0 15px;
+    height: 60px;
+    line-height: 60px;
+}
+nav a:hover {
+    background:var(--black-background);
+}
+nav a:nth-child(2) {
+    margin: 0 120px;
+}

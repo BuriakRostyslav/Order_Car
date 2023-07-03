@@ -1,0 +1,15 @@
+@font-face {
+    font-family: Midroba;
+    src: url(../font/Midroba.ttf);
+}
+body {
+    margin: 0;
+    font-family: Midroba;
+}
+:root {
+    --gray-hover-background: #7d827d;
+    --gray-background: #414542;
+    --black-background: #191a19; 
+    --white-background: #ffffff;
+    --dark-background: #000000;
+}
