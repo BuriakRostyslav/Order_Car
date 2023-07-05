@@ -28,19 +28,18 @@ main h1 {
   padding: 10px;
 }
 .car {
-  width: 100%;
+  width: 91%;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
 }
 .car-container {
-  width: 33%;
-  background-color: var(--white-background);
-  height: 400px;
+  width: 28%;
+  height: 300px;
+  margin-bottom: 25px;
 }
 .car {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 100%;
 }
@@ -48,14 +47,49 @@ div h2 {
   color: var(--white-background);
   background: var(--dark-background);
 }
-.car img {
-  width: 558px;
-  height: 400px;
-}
-.car div:nth-child(1) {
-  background: var(--dark-background);
+.car-container img {
+  width: 430px;
+  height: 300px;
 }
 .car span { 
+  background: var(--dark-background);
   color: var(--white-background);
-  margin: 0 150px;
+  margin: 0 20%;
+}
+.car {
+  display: flex;
+  flex-wrap: wrap;
+}
+.car-container {
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 777px) {
+  .car-container {
+      width: 430px;
+      height: 190px;
+  }
+  .car-container img {
+    width: 375px;
+    height: 180px;
+    margin-top: -1000px;
+    margin-left: 50px;
+
+  }
+}
+@media  screen and (max-width: 777px) {
+  main h1, h2 {
+    display: none;
+  }
+  main a {
+    margin-top: -20px;
+    position: relative;
+    top: -70px;
+    background: var(--dark-background);
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--white-background);
+    padding: 10px 20px;;
+    margin-left: 30%;
+  }
 }
