@@ -79,15 +79,15 @@ p, span{
 .contact-form {
     opacity: 0.1;
     transition: opacity 0.9s;
-  }
+}
   
-  .contact-form:hover {
+.contact-form:hover {
     opacity: 1;
-  }
-  a {
+}
+a {
     transition: transform 1s;
     display: inline;
-  }
-  a:hover {
+}
+a:hover {
     transform: translateX(50px);
-  }
+}
