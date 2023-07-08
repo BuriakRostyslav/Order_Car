@@ -12,9 +12,8 @@ main img {
     justify-content: flex-start;
 }
 main img:hover {
-    transform: scale(1.5);
-    filter: brightness(50%);
-    transition: transform 0.3s, box-shadow 0.3s;
+    animation-name: img-animation;
+    animation-duration: 2s;
 }
 h1 {
     text-align: center;
@@ -23,3 +22,23 @@ h1 {
 p {
     text-shadow: 0px 1px 1px #e85d04;
 }
+@keyframes img-animation {
+    0% {
+        filter: brightness(50%);
+    }
+    25% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1.1) ease;
+        filter: unset;
+        
+    }
+}
+a {
+    transition: transform 1s;
+    display: inline;
+  }
+  a:hover {
+    transform: translateX(50px);
+  }
