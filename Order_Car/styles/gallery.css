@@ -38,7 +38,7 @@ p {
 a {
     transition: transform 1s;
     display: inline;
-  }
-  a:hover {
+}
+a:hover {
     transform: translateX(50px);
-  }
+}

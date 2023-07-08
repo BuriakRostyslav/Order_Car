@@ -44,10 +44,10 @@ nav a {
 a {
     transition: transform 1s;
     display: inline;
-  }
-  a:hover {
+}
+a:hover {
     transform: translateX(50px);
-  }
+}
 nav a:hover {
     background:var(--black-background);
 }
