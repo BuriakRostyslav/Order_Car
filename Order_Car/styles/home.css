@@ -103,3 +103,13 @@ div h2 {
     margin-left: 30%;
   }
 }
+<<<<<<< HEAD
+=======
+.car-container {
+  opacity: 0.7;
+  transition: opacity 0.5s ease;
+}
+.car-container:hover {
+  opacity: 1;
+}
+>>>>>>> 73f6635cf8cc9c45c828be25f1fd445ebe9ce748
