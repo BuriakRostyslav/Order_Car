@@ -11,6 +11,15 @@ main img {
     margin: 0 5px 5px 0;
     justify-content: flex-start;
 }
+main img:hover {
+    transform: scale(1.5);
+    filter: brightness(50%);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
 h1 {
     text-align: center;
+    text-shadow: 0px 4px 1px #e85d04;
+}
+p {
+    text-shadow: 0px 1px 1px #e85d04;
 }
