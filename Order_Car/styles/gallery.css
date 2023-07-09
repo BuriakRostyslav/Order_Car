@@ -39,6 +39,7 @@ a {
     transition: transform 1s;
     display: inline;
 }
+
 a:hover {
     transform: translateX(50px);
 }
