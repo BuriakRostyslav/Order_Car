@@ -12,8 +12,18 @@ main a {
   padding: 10px 20px ;
   margin-left: 39%;
 }
-main a :hover {
+main a:hover {
   background-color: var(--gray--background);
+  animation-name: order-animation;
+  animation-duration: 1s;
+}
+@keyframes order-animation {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 main h1 {
   margin-top: -1065px;
