@@ -1,0 +1,16 @@
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 1300px;
+    width: 800px;
+    margin: 0px 390px auto;
+}
+main img {
+    width: 40%;
+    margin: 0 5px 5px 0;
+    justify-content: flex-start;
+}
+h1 {
+    text-align: center;
+}

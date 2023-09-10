@@ -1,0 +1,406 @@
+@font-face {
+  font-family: Midroba;
+  src: url(../font/Midroba.ttf);
+}
+body {
+  margin: 0;
+  font-family: Midroba;
+}
+
+:root {
+  --gray-hover-background: #7d827d;
+  --gray-background: #414542;
+  --black-background: #191a19;
+  --white-background: #ffffff;
+  --dark-background: #000000;
+}
+
+header {
+  width: 100%;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+}
+
+header img {
+  height: 90px;
+  width: 90px;
+  margin: 0 250px;
+}
+
+.work-hours {
+  margin: 20px 0;
+}
+
+.Delivery {
+  margin: 20px 0;
+}
+
+nav {
+  height: 65px;
+  width: 100%;
+  margin: 0 auto;
+  background: var(--yellow-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-gallery {
+  background: var(--orange-background);
+}
+
+.nav-contact-us {
+  background: var(--red-background);
+}
+
+nav a {
+  color: var(--white-background);
+  text-decoration: 0;
+  font-size: 25px;
+  padding: 0 15px;
+  height: 60px;
+  line-height: 60px;
+}
+
+a {
+  transition: transform 1s;
+  display: inline;
+}
+
+a:hover {
+  transform: translateX(50px);
+}
+
+nav a:hover {
+  background: var(--black-background);
+}
+
+nav a:nth-child(2) {
+  margin: 0 120px;
+}
+
+nav button {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid var(--gray-background);
+  background: var(--yellow-background);
+  position: absolute;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+  display: none;
+}
+
+nav button span {
+  width: 18px;
+  height: 2px;
+  background: #A19C9C;
+  display: inline-block;
+}
+
+@media screen and (max-width: 777px) {
+  .work-hours, .Delivery {
+    display: none;
+  }
+  nav a {
+    display: none;
+  }
+  nav button {
+    display: flex;
+  }
+}
+@media screen and (max-width: 777px) {
+  nav {
+    margin-top: -93px;
+  }
+}
+@media screen and (max-width: 777px) {
+  header img {
+    margin-top: -16px;
+  }
+}
+@media (min-width: 778px) {
+  .image-container img {
+    transition: all 0.9s;
+    box-shadow: 29px 32px 23px #000000;
+  }
+  .image-container:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px #000000;
+  }
+  .car-container {
+    opacity: 0.7;
+    transition: opacity 0.5s ease;
+  }
+  .car-container:hover {
+    opacity: 1;
+  }
+}
+h1 {
+  text-shadow: 0px 4px 1px #ffba08;
+}
+
+p {
+  text-shadow: 0px 1px 1px #ffba08;
+}
+
+.home main {
+  width: 100%;
+  height: 350px;
+}
+.home main a {
+  background: var(--dark-background);
+  width: 290px;
+  height: 40;
+  text-decoration: none;
+  font-size: 30px;
+  color: var(--white-background);
+  padding: 10px 20px;
+  margin-left: 39%;
+}
+.home main a:hover {
+  background-color: var(--gray--background);
+  animation-name: order-animation;
+  animation-duration: 1s;
+}
+.home main a:hover h1 {
+  margin-top: -1065px;
+  z-index: 1;
+  margin-left: 27%;
+}
+
+@keyframes order-animation {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.choose-car {
+  display: flex;
+  justify-content: center;
+  margin: 10% 0 30px;
+  background: var(--dark-background);
+  padding: 10px;
+}
+
+.car {
+  width: 91%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.car-container {
+  width: 28%;
+  height: 300px;
+  margin-bottom: 25px;
+}
+.car-container img {
+  width: 430px;
+  height: 300px;
+}
+
+.car {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+}
+.car span {
+  background: var(--dark-background);
+  color: var(--white-background);
+  margin: 0 20%;
+}
+
+div h2 {
+  color: var(--white-background);
+  background: var(--dark-background);
+}
+
+@media screen and (max-width: 777px) {
+  .car-container {
+    width: 430px;
+    height: 190px;
+  }
+  .car-container img {
+    width: 375px;
+    height: 180px;
+    margin-top: -1000px;
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 777px) {
+  .home main h1, h2 {
+    display: none;
+  }
+  .home main a {
+    margin-top: -20px;
+    position: relative;
+    top: -70px;
+    background: var(--dark-background);
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--white-background);
+    padding: 10px 20px;
+    margin-left: 30%;
+  }
+}
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 1300px;
+  width: 800px;
+  margin: 0px 390px auto;
+}
+main:hover {
+  animation-name: img-animation;
+  animation-duration: 2s;
+}
+main h1 {
+  text-align: center;
+  text-shadow: 0px 4px 1px #e85d04;
+}
+main p {
+  text-shadow: 0px 1px 1px #e85d04;
+}
+
+@keyframes img-animation {
+  0% {
+    filter: brightness(50%);
+  }
+  25% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1.1) ease;
+    filter: unset;
+  }
+}
+a {
+  transition: transform 1s;
+  display: inline;
+}
+a:hover {
+  transform: translateX(50px);
+}
+
+main {
+  width: 880px;
+  margin: 50px auto 200px;
+}
+main .contact-info p {
+  margin-top: 0;
+}
+main .contact-info p span {
+  text-decoration: underline;
+}
+main h1 {
+  text-align: center;
+}
+main h2 {
+  margin-bottom: 0;
+  font-size: 1.5em;
+}
+main .Adress-map iframe {
+  border: 1px solid var(--dark-background) !important;
+}
+main .contact-form {
+  opacity: 0.1;
+  transition: opacity 0.9s;
+  margin-top: 20px;
+}
+main .contact-form label {
+  display: block;
+  margin-top: 10px;
+}
+main .contact-form label input[type=text] {
+  width: 300px;
+  height: 20px;
+  outline: 0;
+  border: 2px solid var(--dark-background);
+  border-radius: 5px;
+  padding: 0 5px;
+}
+main .contact-form label input[type=text]:focus {
+  outline: 2px solid var(--gray-background);
+  border: 2px solid var(--white-background);
+}
+main .contact-form label input[type=text]:focus::placeholder {
+  font-size: 1.2em;
+  color: var(--dark-background);
+  opacity: 0.7;
+}
+main .contact-form label input[type=text]:focus textarea {
+  width: 310px;
+  height: 200px;
+  border-radius: 5px;
+  resize: none;
+  border: 2px solid var(--dark-background);
+}
+main .contact-form label input[type=text]:focus textarea input[type=submit] {
+  width: 200px;
+  height: 40px;
+  display: block;
+  color: var(--white-background);
+  background-color: var(--red-background);
+  font-size: 1.5em;
+  border-radius: 5px;
+  margin-top: 20px;
+  border: 2px solid var(--dark-background);
+  font-family: Midroba;
+  cursor: pointer;
+}
+main .contact-form label input[type=text]:focus textarea input[type=submit]:hover {
+  background-color: var(--dark-background);
+}
+main .contact-form label input[type=text]:focus textarea input[type=submit]:hover:hover input[type=text] {
+  height: 35px;
+  opacity: 1;
+}
+main h1 {
+  text-shadow: 0px 4px 1px #d00000;
+}
+main p,
+main span {
+  text-shadow: 0px 1px 1px #d00000;
+}
+main a {
+  transition: transform 1s;
+  display: inline;
+}
+main a:hover {
+  transform: translateX(50px);
+}
+
+.yellow-theme {
+  --gray-hover-background: #7d827d;
+  --yellow-background: #ffba08;
+  --black-background: #191a19;
+  --white-background: #ffffff;
+  --dark-background: #000000;
+}
+
+.red-theme {
+  --gray-hover-background: #7d827d;
+  --red-background: #d00000;
+  --black-background: #191a19;
+  --white-background: #ffffff;
+  --dark-background: #000000;
+}
+
+.orange-theme {
+  --gray-hover-background: #7d827d;
+  --orange-background: #e85d04;
+  --black-background: #191a19;
+  --white-background: #ffffff;
+  --dark-background: #000000;
+}
+
+/*# sourceMappingURL=styles.css.map */

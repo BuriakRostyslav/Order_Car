@@ -1,0 +1,80 @@
+header {
+    width: 100%;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+}
+header img {
+    height: 90px;
+    width: 90px;
+    margin: 0 250px;
+}
+.work-hours {
+    margin: 20px 0;
+}
+.Delivery {
+    margin: 20px 0;
+}
+nav {
+    height: 65px;
+    width: 100%;
+    margin: 0 auto;
+    background:var(--yellow-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-gallery {
+    background: var(--orange-background);
+  }
+  
+  .nav-contact-us {
+    background: var(--red-background);
+  }
+nav a {
+    color: var(--white-background);
+    text-decoration: 0;
+    font-size: 25px;
+    padding: 0 15px;
+    height: 60px;
+    line-height: 60px;
+}
+nav a:hover {
+    background:var(--black-background);
+}
+nav a:nth-child(2) {
+    margin: 0 120px;
+}
+nav button {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid var(--gray-background);
+    background: var(--yellow-background);
+    position:absolute;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    display: none;
+}
+nav button span {
+    width: 18px;
+    height: 2px;
+    background: #A19C9C;
+    display: inline-block;
+}
+@media  screen and (max-width: 777px) {
+    .work-hours, .Delivery {
+        display: none;
+    }
+    nav a {
+        display: none;
+    }    
+    nav button {
+        display: flex;
+    }
+}
+
+ 
