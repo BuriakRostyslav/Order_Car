@@ -3,7 +3,7 @@ function addNumbers(a, b) {
   if (typeof a === "number" && typeof b === "number") {
     return a + b;
   } else {
-    return NaN; // Повертає NaN, якщо хоча б один з аргументів не є числом
+    return NaN;
   }
 }
 
